@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Oswald:wght@400;500&family=Raleway:wght@500&display=swap');
+        body {
+            background-color:skyblue;
+            font-family: 'Raleway', sans-serif;
+        }
+        table {
+            background-color: #65451F;
+            box-shadow: 6px 6px 5px 10px #6666;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 12%;
+        }
+        td {
+            color: white;
+        }
+        .submit {
+            background-color:blue;
+            border-radius: 10px;
+            color: white;
+            width: 120px;
+        }
+        .reset {
+            background-color: red;
+            border-radius: 10px;
+            color: white;
+            width: 120px;
+        }
+        #nis, #nama, #alamat, #naonweh, #lahir {
+            box-shadow: 2px 2px 1px 3px #6666 ;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table width = "40%">
+            <tr>
+                <td><hr></td>
+                <td align="center"><b> FROM INPUT BIODATA</b></td>
+                <td><hr></td>
+            </tr>
+            <tr>
+                <td width="45%">NIS</td>
+                <td width="10" align="center">:</td>
+                <td width="45"><input type="number" id="nis" name="nis"></td>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td align="center">:</td>
+                <td><input type="text" id="nama" name="nama"></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td align="center">:</td>
+                <td><textarea name="Alamat" id="alamat" cols="30" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td align="center">:</td>
+                <td><select name="" id="naonweh">
+                    <option value="Laki-laki">Laki-Laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td align="center">:</td>
+                <td><input type="date" name="lahir" id="lahir"></td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td align="center">:</td>
+                <td>
+                    <input type="radio" name="Islam" id="Islam">
+                    <label for="Islam">Islam</label> <br>
+                    <input type="radio" name="Kristen" id="Kristen">
+                    <label for="Kristen">Kristen</label> <br>
+                    <input type="radio" name="Hindu" id="Hindu">
+                    <label for="Hindu">Hindu</label> <br>
+                    <input type="radio" name="Buddha" id="Buddha">
+                    <label for="Buddha">Buddha</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Hobi</td>
+                <td align="center">:</td>
+                <td>
+                    <input type="checkbox" id="Voli" name="Voli" value="voli">
+                    <label for="Voli">Voli</label><br>
+                    <input type="checkbox" id="Renang" name="Renang" value="Renang">
+                    <label for="Renang">Renang</label><br>
+                    <input type="checkbox" id="dll" name="dll" value="dll">
+                    <label for="dll">dll</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><input type="submit" value="SUBMIT" class="submit"></td>
+                <td align="center"></td>
+                <td><input type="reset" value="RESET" class="reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
